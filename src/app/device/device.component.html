@@ -1,0 +1,32 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+       Advanced Tables
+  </div>
+  <div class="panel-body">
+      <div class="table-responsive">
+          <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+              <thead>
+                  <tr>
+                      <th>the IP address</th>
+                      <th>the MAC address</th>
+                      <th>the datapath ID</th>
+                      <th>the port </th>
+                     
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor = "let dev of devices" class="odd gradeX">
+                      <td>{{dev.uid}}</td>
+                      <td>{{ dev.deviceStatus }}</td>
+                      <td>Win 95+</td>
+                      <td class="center">4</td>
+                      <td class="center">X</td>
+                  </tr>
+                 
+              </tbody>
+          </table>
+      </div>
+      
+  </div>
+</div>
+<!--End Advanced Tables -->
